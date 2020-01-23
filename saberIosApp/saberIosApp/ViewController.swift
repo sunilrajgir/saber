@@ -13,6 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let test = TestDependencyInjection(logger: ConsoleLogger())
+        test.initializeInstance()
         // Do any additional setup after loading the view.
     }
 
