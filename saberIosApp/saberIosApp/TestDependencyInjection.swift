@@ -8,6 +8,7 @@
 
 import Foundation
 
+// @saber.scope(App)
 class TestDependencyInjection {
     private let logger : ConsoleLogger
     
