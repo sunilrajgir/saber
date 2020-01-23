@@ -15,6 +15,7 @@
 		3231483623D9F82600B71DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231483423D9F82600B71DCD /* LaunchScreen.storyboard */; };
 		3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231484223D9F9B900B71DCD /* AppContaining.swift */; };
 		3231484523D9FA4400B71DCD /* AppContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231484423D9FA4400B71DCD /* AppContainer.saber.swift */; };
+		3231484A23DA037900B71DCD /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231484923DA037900B71DCD /* ConsoleLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3231483723D9F82600B71DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3231484223D9F9B900B71DCD /* AppContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContaining.swift; sourceTree = "<group>"; };
 		3231484423D9FA4400B71DCD /* AppContainer.saber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.saber.swift; sourceTree = "<group>"; };
+		3231484923DA037900B71DCD /* ConsoleLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				3231484223D9F9B900B71DCD /* AppContaining.swift */,
+				3231484923DA037900B71DCD /* ConsoleLogger.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				3231482E23D9F82500B71DCD /* ViewController.swift in Sources */,
 				3231482A23D9F82500B71DCD /* AppDelegate.swift in Sources */,
 				3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */,
+				3231484A23DA037900B71DCD /* ConsoleLogger.swift in Sources */,
 				3231484523D9FA4400B71DCD /* AppContainer.saber.swift in Sources */,
 				3231482C23D9F82500B71DCD /* SceneDelegate.swift in Sources */,
 			);
