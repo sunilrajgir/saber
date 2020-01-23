@@ -8,6 +8,7 @@
 
 import UIKit
 
+//@saber.scope(App)
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

@@ -11,11 +11,20 @@ internal class AppContainer: AppContaining {
     internal init() {
     }
 
+    internal var viewController: ViewController {
+        let viewController = self.makeViewController()
+        return viewController
+    }
+
     internal var consoleLogger: ConsoleLogger {
         if let cached = self.cached_consoleLogger { return cached }
         let consoleLogger = self.makeConsoleLogger()
         self.cached_consoleLogger = consoleLogger
         return consoleLogger
+    }
+
+    private func makeViewController() -> ViewController {
+        return ViewController()
     }
 
     private func makeConsoleLogger() -> ConsoleLogger {
