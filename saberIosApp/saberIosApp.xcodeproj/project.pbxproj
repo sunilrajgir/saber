@@ -13,6 +13,8 @@
 		3231483123D9F82500B71DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231482F23D9F82500B71DCD /* Main.storyboard */; };
 		3231483323D9F82600B71DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3231483223D9F82600B71DCD /* Assets.xcassets */; };
 		3231483623D9F82600B71DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231483423D9F82600B71DCD /* LaunchScreen.storyboard */; };
+		3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231484223D9F9B900B71DCD /* AppContaining.swift */; };
+		3231484523D9FA4400B71DCD /* AppContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231484423D9FA4400B71DCD /* AppContainer.saber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3231483223D9F82600B71DCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3231483523D9F82600B71DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3231483723D9F82600B71DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3231484223D9F9B900B71DCD /* AppContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContaining.swift; sourceTree = "<group>"; };
+		3231484423D9FA4400B71DCD /* AppContainer.saber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.saber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		3231482823D9F82500B71DCD /* saberIosApp */ = {
 			isa = PBXGroup;
 			children = (
+				3231483E23D9F8DF00B71DCD /* Saber */,
+				3231483F23D9F8EB00B71DCD /* Sources */,
 				3231482923D9F82500B71DCD /* AppDelegate.swift */,
-				3231482B23D9F82500B71DCD /* SceneDelegate.swift */,
 				3231482D23D9F82500B71DCD /* ViewController.swift */,
+				3231482B23D9F82500B71DCD /* SceneDelegate.swift */,
 				3231482F23D9F82500B71DCD /* Main.storyboard */,
 				3231483223D9F82600B71DCD /* Assets.xcassets */,
 				3231483423D9F82600B71DCD /* LaunchScreen.storyboard */,
 				3231483723D9F82600B71DCD /* Info.plist */,
 			);
 			path = saberIosApp;
+			sourceTree = "<group>";
+		};
+		3231483E23D9F8DF00B71DCD /* Saber */ = {
+			isa = PBXGroup;
+			children = (
+				3231484423D9FA4400B71DCD /* AppContainer.saber.swift */,
+			);
+			path = Saber;
+			sourceTree = "<group>";
+		};
+		3231483F23D9F8EB00B71DCD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3231484223D9F9B900B71DCD /* AppContaining.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3231483A23D9F82600B71DCD /* Build configuration list for PBXNativeTarget "saberIosApp" */;
 			buildPhases = (
+				3231484623D9FAF400B71DCD /* Saber */,
 				3231482223D9F82500B71DCD /* Sources */,
 				3231482323D9F82500B71DCD /* Frameworks */,
 				3231482423D9F82500B71DCD /* Resources */,
@@ -133,6 +156,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3231484623D9FAF400B71DCD /* Saber */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Saber;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "saber sources --workDir ${PROJECT_DIR}/saberIosApp --from . --out Saber\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3231482223D9F82500B71DCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +184,8 @@
 			files = (
 				3231482E23D9F82500B71DCD /* ViewController.swift in Sources */,
 				3231482A23D9F82500B71DCD /* AppDelegate.swift in Sources */,
+				3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */,
+				3231484523D9FA4400B71DCD /* AppContainer.saber.swift in Sources */,
 				3231482C23D9F82500B71DCD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
