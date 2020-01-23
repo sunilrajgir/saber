@@ -16,6 +16,7 @@
 		3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231484223D9F9B900B71DCD /* AppContaining.swift */; };
 		3231484523D9FA4400B71DCD /* AppContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231484423D9FA4400B71DCD /* AppContainer.saber.swift */; };
 		3231484A23DA037900B71DCD /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231484923DA037900B71DCD /* ConsoleLogger.swift */; };
+		3231484C23DA058700B71DCD /* TestDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231484B23DA058700B71DCD /* TestDependencyInjection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3231484223D9F9B900B71DCD /* AppContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContaining.swift; sourceTree = "<group>"; };
 		3231484423D9FA4400B71DCD /* AppContainer.saber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.saber.swift; sourceTree = "<group>"; };
 		3231484923DA037900B71DCD /* ConsoleLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
+		3231484B23DA058700B71DCD /* TestDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDependencyInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +67,13 @@
 				3231483E23D9F8DF00B71DCD /* Saber */,
 				3231483F23D9F8EB00B71DCD /* Sources */,
 				3231482923D9F82500B71DCD /* AppDelegate.swift */,
-				3231482D23D9F82500B71DCD /* ViewController.swift */,
 				3231482B23D9F82500B71DCD /* SceneDelegate.swift */,
+				3231482D23D9F82500B71DCD /* ViewController.swift */,
 				3231482F23D9F82500B71DCD /* Main.storyboard */,
 				3231483223D9F82600B71DCD /* Assets.xcassets */,
 				3231483423D9F82600B71DCD /* LaunchScreen.storyboard */,
 				3231483723D9F82600B71DCD /* Info.plist */,
+				3231484B23DA058700B71DCD /* TestDependencyInjection.swift */,
 			);
 			path = saberIosApp;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3231484C23DA058700B71DCD /* TestDependencyInjection.swift in Sources */,
 				3231482E23D9F82500B71DCD /* ViewController.swift in Sources */,
 				3231482A23D9F82500B71DCD /* AppDelegate.swift in Sources */,
 				3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */,
