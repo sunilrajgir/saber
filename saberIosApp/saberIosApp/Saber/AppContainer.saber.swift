@@ -11,11 +11,6 @@ internal class AppContainer: AppContaining {
     internal init() {
     }
 
-    internal var testDependencyInjection: TestDependencyInjection {
-        let testDependencyInjection = self.makeTestDependencyInjection()
-        return testDependencyInjection
-    }
-
     internal var consoleLogger: ConsoleLogger {
         if let cached = self.cached_consoleLogger { return cached }
         let consoleLogger = self.makeConsoleLogger()
@@ -23,12 +18,26 @@ internal class AppContainer: AppContaining {
         return consoleLogger
     }
 
-    private func makeTestDependencyInjection() -> TestDependencyInjection {
-        return TestDependencyInjection(logger: self.consoleLogger)
+    internal var testDependencyInjection: TestDependencyInjection {
+        let testDependencyInjection = self.makeTestDependencyInjection()
+        return testDependencyInjection
+    }
+
+    internal var networkManager: NetworkManager {
+        let networkManager = self.makeNetworkManager()
+        return networkManager
     }
 
     private func makeConsoleLogger() -> ConsoleLogger {
         return ConsoleLogger()
+    }
+
+    private func makeTestDependencyInjection() -> TestDependencyInjection {
+        return TestDependencyInjection(logger: self.consoleLogger)
+    }
+
+    private func makeNetworkManager() -> NetworkManager {
+        return NetworkManager()
     }
 
 }

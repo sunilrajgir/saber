@@ -12,7 +12,7 @@ import Foundation
 class TestDependencyInjection {
     private let logger : ConsoleLogger
     
-     // @saber.inject
+    // @saber.inject
     init(logger: ConsoleLogger) {
         self.logger = logger
     }

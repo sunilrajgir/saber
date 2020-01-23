@@ -19,5 +19,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func buttonAction(_ sender: UIButton) {
+        let viewController = TestViewController(nibName: nil, bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
