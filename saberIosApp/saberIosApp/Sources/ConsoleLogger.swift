@@ -8,6 +8,8 @@
 
 import Foundation
 
+// @saber.scope(App)
+// @saber.cached
 class ConsoleLogger {
     func log(message: String) {
         print("\(message)")

@@ -6,7 +6,20 @@ import Foundation
 
 internal class AppContainer: AppContaining {
 
+    private var cached_consoleLogger: ConsoleLogger?
+
     internal init() {
+    }
+
+    internal var consoleLogger: ConsoleLogger {
+        if let cached = self.cached_consoleLogger { return cached }
+        let consoleLogger = self.makeConsoleLogger()
+        self.cached_consoleLogger = consoleLogger
+        return consoleLogger
+    }
+
+    private func makeConsoleLogger() -> ConsoleLogger {
+        return ConsoleLogger()
     }
 
 }
