@@ -10,10 +10,10 @@ import UIKit
 
 
 class ViewController: UIViewController {
-
+    let appContainer = AppContainer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let test = TestDependencyInjection(logger: ConsoleLogger())
+        let test = appContainer.testDependencyInjection
         test.initializeInstance()
         // Do any additional setup after loading the view.
     }
