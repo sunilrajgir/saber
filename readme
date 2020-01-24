@@ -1,1 +1,12 @@
+
+
+I don't recommend saber tool for any iOS app due to below reason-
+ 1. very very hard to debug => looks like working on Low level language
+ 2. It generates swift file => increases compile time [since number of swift file will always increase in iOS project hence tool will take more time in future]
+ 3. inject dependencies at run time => decreases application performance
+ 4. AppContainer file size will always increase
+ 5. Continuous changes in Swift Syntax, Xcode, system => [can’t rely on saber tool]
+This is my personal view on saber tool.
+
+How to add saber in xcode
 https://medium.com/@andrew.pleshkov/saber-code-generated-di-ioc-for-swift-f38bbcb5de16
