@@ -11,5 +11,7 @@ import Foundation
 // @saber.scope(brief)
 class Foo {
     
-
+    func printFoo() {
+        print("Foo")
+    }
 }

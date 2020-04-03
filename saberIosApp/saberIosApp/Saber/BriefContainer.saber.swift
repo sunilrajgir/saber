@@ -9,11 +9,6 @@ internal class BriefContainer: BriefContaning {
     internal init() {
     }
 
-    internal var bar: Bar {
-        let bar = self.makeBar()
-        return bar
-    }
-
     internal var foo: Foo {
         let foo = self.makeFoo()
         return foo
@@ -24,8 +19,9 @@ internal class BriefContainer: BriefContaning {
         return user
     }
 
-    private func makeBar() -> Bar {
-        return Bar(foo: self.foo)
+    internal var bar: Bar {
+        let bar = self.makeBar()
+        return bar
     }
 
     private func makeFoo() -> Foo {
@@ -34,6 +30,10 @@ internal class BriefContainer: BriefContaning {
 
     private func makeUser() -> User {
         return User(name: self.bar)
+    }
+
+    private func makeBar() -> Bar {
+        return Bar(foo: self.foo)
     }
 
 }

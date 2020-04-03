@@ -10,9 +10,10 @@ import Foundation
 
 // @saber.scope(brief)
 class Bar {
-    
+    let foo : Foo
     // @saber.inject
     init(foo: Foo) {
-        
+        self.foo = foo
     }
+
 }
