@@ -22,6 +22,8 @@
 		3231485323DA09A900B71DCD /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3231485123DA09A900B71DCD /* TestViewController.xib */; };
 		3265F93F24379E6F0084E3B8 /* Brief.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265F93E24379E6F0084E3B8 /* Brief.swift */; };
 		3265F94124379EC20084E3B8 /* briefContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265F94024379EC20084E3B8 /* briefContainer.saber.swift */; };
+		3265F94324379F210084E3B8 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265F94224379F210084E3B8 /* Foo.swift */; };
+		3265F94524379F5D0084E3B8 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265F94424379F5D0084E3B8 /* Bar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		3231485123DA09A900B71DCD /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		3265F93E24379E6F0084E3B8 /* Brief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brief.swift; sourceTree = "<group>"; };
 		3265F94024379EC20084E3B8 /* briefContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = briefContainer.saber.swift; sourceTree = "<group>"; };
+		3265F94224379F210084E3B8 /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		3265F94424379F5D0084E3B8 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				3265F93E24379E6F0084E3B8 /* Brief.swift */,
+				3265F94224379F210084E3B8 /* Foo.swift */,
+				3265F94424379F5D0084E3B8 /* Bar.swift */,
 			);
 			path = brief;
 			sourceTree = "<group>";
@@ -232,7 +238,9 @@
 				3231482E23D9F82500B71DCD /* ViewController.swift in Sources */,
 				3231482A23D9F82500B71DCD /* AppDelegate.swift in Sources */,
 				3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */,
+				3265F94324379F210084E3B8 /* Foo.swift in Sources */,
 				3265F94124379EC20084E3B8 /* briefContainer.saber.swift in Sources */,
+				3265F94524379F5D0084E3B8 /* Bar.swift in Sources */,
 				3265F93F24379E6F0084E3B8 /* Brief.swift in Sources */,
 				3231484F23DA091200B71DCD /* NetworkManager.swift in Sources */,
 				3231484A23DA037900B71DCD /* ConsoleLogger.swift in Sources */,
