@@ -19,12 +19,21 @@ internal class BriefContainer: BriefContaning {
         return foo
     }
 
+    internal var user: User {
+        let user = self.makeUser()
+        return user
+    }
+
     private func makeBar() -> Bar {
         return Bar(foo: self.foo)
     }
 
     private func makeFoo() -> Foo {
         return Foo()
+    }
+
+    private func makeUser() -> User {
+        return User(name: self.bar)
     }
 
 }

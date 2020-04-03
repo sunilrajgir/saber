@@ -21,6 +21,7 @@
 		3231485223DA09A900B71DCD /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231485023DA09A900B71DCD /* TestViewController.swift */; };
 		3231485323DA09A900B71DCD /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3231485123DA09A900B71DCD /* TestViewController.xib */; };
 		3232C3442437A31600DEB8DC /* TestBrief.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3432437A31600DEB8DC /* TestBrief.swift */; };
+		3232C3462437A52800DEB8DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3452437A52800DEB8DC /* User.swift */; };
 		3265F93F24379E6F0084E3B8 /* BriefContaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265F93E24379E6F0084E3B8 /* BriefContaning.swift */; };
 		3265F94324379F210084E3B8 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265F94224379F210084E3B8 /* Foo.swift */; };
 		3265F94524379F5D0084E3B8 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265F94424379F5D0084E3B8 /* Bar.swift */; };
@@ -46,6 +47,7 @@
 		3231485023DA09A900B71DCD /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		3231485123DA09A900B71DCD /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		3232C3432437A31600DEB8DC /* TestBrief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBrief.swift; sourceTree = "<group>"; };
+		3232C3452437A52800DEB8DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3265F93E24379E6F0084E3B8 /* BriefContaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefContaning.swift; sourceTree = "<group>"; };
 		3265F94224379F210084E3B8 /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
 		3265F94424379F5D0084E3B8 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				3265F9472437A1440084E3B8 /* UserContaining.swift */,
+				3232C3452437A52800DEB8DC /* User.swift */,
 			);
 			path = user;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				3231482A23D9F82500B71DCD /* AppDelegate.swift in Sources */,
 				3232C3442437A31600DEB8DC /* TestBrief.swift in Sources */,
 				3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */,
+				3232C3462437A52800DEB8DC /* User.swift in Sources */,
 				3265F94324379F210084E3B8 /* Foo.swift in Sources */,
 				3265F9482437A1440084E3B8 /* UserContaining.swift in Sources */,
 				3265F94524379F5D0084E3B8 /* Bar.swift in Sources */,

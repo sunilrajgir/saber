@@ -1,5 +1,5 @@
 //
-//  Foo.swift
+//  User.swift
 //  saberIosApp
 //
 //  Created by sunil.kumar1 on 4/3/20.
@@ -9,7 +9,11 @@
 import Foundation
 
 // @saber.scope(brief)
-class Foo {
+class User {
+    let name : Bar
     
-
+    // @saber.inject
+    init(name: Bar) {
+        self.name = name
+    }
 }
