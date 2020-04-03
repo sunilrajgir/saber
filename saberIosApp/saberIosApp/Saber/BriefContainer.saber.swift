@@ -4,23 +4,14 @@
 
 import Foundation
 
-internal class briefContainer: brief {
+internal class BriefContainer: BriefContaning {
 
     internal init() {
-    }
-
-    internal var bar: Bar {
-        let bar = self.makeBar()
-        return bar
     }
 
     internal var foo: Foo {
         let foo = self.makeFoo()
         return foo
-    }
-
-    private func makeBar() -> Bar {
-        return Bar()
     }
 
     private func makeFoo() -> Foo {
