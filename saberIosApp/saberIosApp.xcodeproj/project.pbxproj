@@ -20,6 +20,8 @@
 		3231484F23DA091200B71DCD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231484E23DA091200B71DCD /* NetworkManager.swift */; };
 		3231485223DA09A900B71DCD /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231485023DA09A900B71DCD /* TestViewController.swift */; };
 		3231485323DA09A900B71DCD /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3231485123DA09A900B71DCD /* TestViewController.xib */; };
+		3265F93F24379E6F0084E3B8 /* Brief.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265F93E24379E6F0084E3B8 /* Brief.swift */; };
+		3265F94124379EC20084E3B8 /* briefContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265F94024379EC20084E3B8 /* briefContainer.saber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		3231484E23DA091200B71DCD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3231485023DA09A900B71DCD /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		3231485123DA09A900B71DCD /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		3265F93E24379E6F0084E3B8 /* Brief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brief.swift; sourceTree = "<group>"; };
+		3265F94024379EC20084E3B8 /* briefContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = briefContainer.saber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		3231482823D9F82500B71DCD /* saberIosApp */ = {
 			isa = PBXGroup;
 			children = (
+				32B72E4724379CCA00008EB0 /* brief */,
 				3231484D23DA08E900B71DCD /* saberUndetstand */,
 				3231483E23D9F8DF00B71DCD /* Saber */,
 				3231483F23D9F8EB00B71DCD /* Sources */,
@@ -88,6 +93,7 @@
 		3231483E23D9F8DF00B71DCD /* Saber */ = {
 			isa = PBXGroup;
 			children = (
+				3265F94024379EC20084E3B8 /* briefContainer.saber.swift */,
 				3231484423D9FA4400B71DCD /* AppContainer.saber.swift */,
 			);
 			path = Saber;
@@ -110,6 +116,22 @@
 				3231485123DA09A900B71DCD /* TestViewController.xib */,
 			);
 			path = saberUndetstand;
+			sourceTree = "<group>";
+		};
+		32B72E4724379CCA00008EB0 /* brief */ = {
+			isa = PBXGroup;
+			children = (
+				32B72E4824379CFA00008EB0 /* brief */,
+			);
+			path = brief;
+			sourceTree = "<group>";
+		};
+		32B72E4824379CFA00008EB0 /* brief */ = {
+			isa = PBXGroup;
+			children = (
+				3265F93E24379E6F0084E3B8 /* Brief.swift */,
+			);
+			path = brief;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +232,8 @@
 				3231482E23D9F82500B71DCD /* ViewController.swift in Sources */,
 				3231482A23D9F82500B71DCD /* AppDelegate.swift in Sources */,
 				3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */,
+				3265F94124379EC20084E3B8 /* briefContainer.saber.swift in Sources */,
+				3265F93F24379E6F0084E3B8 /* Brief.swift in Sources */,
 				3231484F23DA091200B71DCD /* NetworkManager.swift in Sources */,
 				3231484A23DA037900B71DCD /* ConsoleLogger.swift in Sources */,
 				3231484523D9FA4400B71DCD /* AppContainer.saber.swift in Sources */,
