@@ -11,11 +11,6 @@ internal class AppContainer: AppContaining {
     internal init() {
     }
 
-    internal var testViewController: TestViewController {
-        let testViewController = self.makeTestViewController()
-        return testViewController
-    }
-
     internal var consoleLogger: ConsoleLogger {
         if let cached = self.cached_consoleLogger { return cached }
         let consoleLogger = self.makeConsoleLogger()
@@ -23,9 +18,9 @@ internal class AppContainer: AppContaining {
         return consoleLogger
     }
 
-    internal var networkManager: NetworkManager {
-        let networkManager = self.makeNetworkManager()
-        return networkManager
+    internal var testViewController: TestViewController {
+        let testViewController = self.makeTestViewController()
+        return testViewController
     }
 
     internal var testDependencyInjection: TestDependencyInjection {
@@ -33,20 +28,25 @@ internal class AppContainer: AppContaining {
         return testDependencyInjection
     }
 
-    private func makeTestViewController() -> TestViewController {
-        return TestViewController(dataManager: self.networkManager)
+    internal var networkManager: NetworkManager {
+        let networkManager = self.makeNetworkManager()
+        return networkManager
     }
 
     private func makeConsoleLogger() -> ConsoleLogger {
         return ConsoleLogger()
     }
 
-    private func makeNetworkManager() -> NetworkManager {
-        return NetworkManager()
+    private func makeTestViewController() -> TestViewController {
+        return TestViewController(dataManager: self.networkManager)
     }
 
     private func makeTestDependencyInjection() -> TestDependencyInjection {
         return TestDependencyInjection(logger: self.consoleLogger)
+    }
+
+    private func makeNetworkManager() -> NetworkManager {
+        return NetworkManager()
     }
 
 }

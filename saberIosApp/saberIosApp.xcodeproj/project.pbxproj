@@ -27,6 +27,14 @@
 		3232C3512437B3A500DEB8DC /* BooContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3502437B3A500DEB8DC /* BooContaining.swift */; };
 		3232C3532437B42700DEB8DC /* BooContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3522437B42700DEB8DC /* BooContainer.saber.swift */; };
 		3232C3552437B43900DEB8DC /* Boo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3542437B43900DEB8DC /* Boo.swift */; };
+		3232C35A2437CD0B00DEB8DC /* UserContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3592437CD0B00DEB8DC /* UserContaining.swift */; };
+		3232C35C2437CD4F00DEB8DC /* UserContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C35B2437CD4E00DEB8DC /* UserContainer.saber.swift */; };
+		3232C35E2437CD5E00DEB8DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C35D2437CD5E00DEB8DC /* User.swift */; };
+		3232C3602437CDA800DEB8DC /* AppsContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C35F2437CDA800DEB8DC /* AppsContaining.swift */; };
+		3232C3622437CDE100DEB8DC /* AppsContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3612437CDE100DEB8DC /* AppsContainer.saber.swift */; };
+		3232C3642437CE0500DEB8DC /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3632437CE0500DEB8DC /* Database.swift */; };
+		3232C3662437CEC700DEB8DC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3652437CEC700DEB8DC /* UserManager.swift */; };
+		3232C3682437CFA600DEB8DC /* TestContainerInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3672437CFA600DEB8DC /* TestContainerInheritance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +60,14 @@
 		3232C3502437B3A500DEB8DC /* BooContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooContaining.swift; sourceTree = "<group>"; };
 		3232C3522437B42700DEB8DC /* BooContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooContainer.saber.swift; sourceTree = "<group>"; };
 		3232C3542437B43900DEB8DC /* Boo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boo.swift; sourceTree = "<group>"; };
+		3232C3592437CD0B00DEB8DC /* UserContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContaining.swift; sourceTree = "<group>"; };
+		3232C35B2437CD4E00DEB8DC /* UserContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContainer.saber.swift; sourceTree = "<group>"; };
+		3232C35D2437CD5E00DEB8DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3232C35F2437CDA800DEB8DC /* AppsContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsContaining.swift; sourceTree = "<group>"; };
+		3232C3612437CDE100DEB8DC /* AppsContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsContainer.saber.swift; sourceTree = "<group>"; };
+		3232C3632437CE0500DEB8DC /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		3232C3652437CEC700DEB8DC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		3232C3672437CFA600DEB8DC /* TestContainerInheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContainerInheritance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +100,7 @@
 		3231482823D9F82500B71DCD /* saberIosApp */ = {
 			isa = PBXGroup;
 			children = (
+				3232C3562437B60000DEB8DC /* ContainerInheritance */,
 				3232C3472437B23A00DEB8DC /* Container */,
 				3232C3422437A30500DEB8DC /* Test */,
 				3231484D23DA08E900B71DCD /* saberUndetstand */,
@@ -104,6 +121,8 @@
 		3231483E23D9F8DF00B71DCD /* Saber */ = {
 			isa = PBXGroup;
 			children = (
+				3232C3612437CDE100DEB8DC /* AppsContainer.saber.swift */,
+				3232C35B2437CD4E00DEB8DC /* UserContainer.saber.swift */,
 				3232C3522437B42700DEB8DC /* BooContainer.saber.swift */,
 				3232C34C2437B31300DEB8DC /* FooContainer.saber.swift */,
 				3231484423D9FA4400B71DCD /* AppContainer.saber.swift */,
@@ -163,6 +182,35 @@
 				3232C3542437B43900DEB8DC /* Boo.swift */,
 			);
 			path = Boo;
+			sourceTree = "<group>";
+		};
+		3232C3562437B60000DEB8DC /* ContainerInheritance */ = {
+			isa = PBXGroup;
+			children = (
+				3232C3582437CCF400DEB8DC /* apps */,
+				3232C3572437CCEC00DEB8DC /* user */,
+				3232C3672437CFA600DEB8DC /* TestContainerInheritance.swift */,
+			);
+			path = ContainerInheritance;
+			sourceTree = "<group>";
+		};
+		3232C3572437CCEC00DEB8DC /* user */ = {
+			isa = PBXGroup;
+			children = (
+				3232C3592437CD0B00DEB8DC /* UserContaining.swift */,
+				3232C35D2437CD5E00DEB8DC /* User.swift */,
+				3232C3652437CEC700DEB8DC /* UserManager.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		3232C3582437CCF400DEB8DC /* apps */ = {
+			isa = PBXGroup;
+			children = (
+				3232C35F2437CDA800DEB8DC /* AppsContaining.swift */,
+				3232C3632437CE0500DEB8DC /* Database.swift */,
+			);
+			path = apps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,21 +308,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				3231484C23DA058700B71DCD /* TestDependencyInjection.swift in Sources */,
+				3232C35A2437CD0B00DEB8DC /* UserContaining.swift in Sources */,
 				3232C34D2437B31300DEB8DC /* FooContainer.saber.swift in Sources */,
 				3232C34F2437B33100DEB8DC /* Foo.swift in Sources */,
 				3232C3512437B3A500DEB8DC /* BooContaining.swift in Sources */,
 				3232C3552437B43900DEB8DC /* Boo.swift in Sources */,
 				3231482E23D9F82500B71DCD /* ViewController.swift in Sources */,
+				3232C3662437CEC700DEB8DC /* UserManager.swift in Sources */,
 				3231482A23D9F82500B71DCD /* AppDelegate.swift in Sources */,
 				3232C3532437B42700DEB8DC /* BooContainer.saber.swift in Sources */,
+				3232C3602437CDA800DEB8DC /* AppsContaining.swift in Sources */,
 				3232C3442437A31600DEB8DC /* TestBrief.swift in Sources */,
 				3232C34B2437B2BE00DEB8DC /* FooContaining.swift in Sources */,
+				3232C3642437CE0500DEB8DC /* Database.swift in Sources */,
+				3232C3682437CFA600DEB8DC /* TestContainerInheritance.swift in Sources */,
 				3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */,
 				3231484F23DA091200B71DCD /* NetworkManager.swift in Sources */,
 				3231484A23DA037900B71DCD /* ConsoleLogger.swift in Sources */,
 				3231484523D9FA4400B71DCD /* AppContainer.saber.swift in Sources */,
 				3231485223DA09A900B71DCD /* TestViewController.swift in Sources */,
 				3231482C23D9F82500B71DCD /* SceneDelegate.swift in Sources */,
+				3232C3622437CDE100DEB8DC /* AppsContainer.saber.swift in Sources */,
+				3232C35C2437CD4F00DEB8DC /* UserContainer.saber.swift in Sources */,
+				3232C35E2437CD5E00DEB8DC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
