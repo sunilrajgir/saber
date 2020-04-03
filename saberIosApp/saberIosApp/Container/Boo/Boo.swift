@@ -1,5 +1,5 @@
 //
-//  UserContaining.swift
+//  Boo.swift
 //  saberIosApp
 //
 //  Created by sunil.kumar1 on 4/3/20.
@@ -8,8 +8,7 @@
 
 import Foundation
 
-// @saber.container(UserContainer)
-// @saber.scope(user)
-protocol UserContaining {
+// @saber.scope(Foo)
+class Boo {
     
 }

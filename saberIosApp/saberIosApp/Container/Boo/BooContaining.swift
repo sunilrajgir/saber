@@ -1,5 +1,5 @@
 //
-//  Bar.swift
+//  BarContaining.swift
 //  saberIosApp
 //
 //  Created by sunil.kumar1 on 4/3/20.
@@ -8,12 +8,9 @@
 
 import Foundation
 
-// @saber.scope(brief)
-class Bar {
-    let foo : Foo
-    // @saber.inject
-    init(foo: Foo) {
-        self.foo = foo
-    }
-
+// @saber.scope(Boo)
+// @saber.container(BooContainer)
+protocol BooContaining {
+    
 }
+

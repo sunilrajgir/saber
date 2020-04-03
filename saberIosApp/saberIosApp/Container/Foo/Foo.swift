@@ -8,10 +8,13 @@
 
 import Foundation
 
-// @saber.scope(brief)
+// @saber.scope(Foo)
 class Foo {
+    let boo : Boo
     
-    func printFoo() {
-        print("Foo")
+    // @saber.inject
+    init(boo: Boo) {
+        self.boo = boo
     }
+    
 }

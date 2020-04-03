@@ -1,5 +1,5 @@
 //
-//  Brief.swift
+//  FooContaining.swift
 //  saberIosApp
 //
 //  Created by sunil.kumar1 on 4/3/20.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-// @saber.container(BriefContainer)
-// @saber.scope(brief)
-protocol BriefContaning {
+// @saber.scope(Foo)
+// @saber.container(FooContainer)
+protocol FooContaining {
     
 }

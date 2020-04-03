@@ -4,7 +4,7 @@
 
 import Foundation
 
-internal class UserContainer: UserContaining {
+internal class BooContainer: BooContaining {
 
     internal init() {
     }

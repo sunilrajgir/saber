@@ -11,14 +11,15 @@ import Foundation
 
 class TestBrief {
     
-    let briefContainer = BriefContainer()
+
+   
     
     init() {
        briefPrint()
     }
     
     func briefPrint() {
-        briefContainer.bar.foo.printFoo()
+
     }
 
 }
