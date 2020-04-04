@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         TestInstanceInjection().testInjection()
         //Lazy2()
         ProviderContainer().testProvider.logging.log("Sunil Logger")
+        TestSingleton().test()
         return true
     }
 
