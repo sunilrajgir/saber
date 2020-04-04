@@ -10,6 +10,7 @@ import Foundation
 
 // @saber.scope(single)
 // @saber.cached
+// @saber.threadSafe
 class NManager {
     
 }

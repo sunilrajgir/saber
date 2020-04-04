@@ -11,9 +11,9 @@ import Foundation
 class TestSingleton {
     
     func test() {
-        let n1 = SingletonContainer().nManager
-        let n2 = SingletonContainer().nManager
-        
+        let container = SingletonContainer()
+        let n1 = container.nManager
+        let n2 = container.nManager
         
     }
 }
