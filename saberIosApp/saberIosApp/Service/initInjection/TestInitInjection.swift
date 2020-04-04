@@ -9,7 +9,7 @@
 import Foundation
 
 // @saber.scope(service)
-class TestService {
+class TestInitInjection {
     let networkManager : NetworkManager1
     let storageManager : StorageManager
     

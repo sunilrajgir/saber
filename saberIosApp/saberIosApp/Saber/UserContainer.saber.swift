@@ -15,22 +15,22 @@ internal class UserContainer: UserContaining {
         self.userId = userId
     }
 
-    internal var user: User {
-        let user = self.makeUser()
-        return user
-    }
-
     internal var userManager: UserManager {
         let userManager = self.makeUserManager()
         return userManager
     }
 
-    private func makeUser() -> User {
-        return User()
+    internal var user: User {
+        let user = self.makeUser()
+        return user
     }
 
     private func makeUserManager() -> UserManager {
         return UserManager(database: self.appsContainer.database, userId: self.userId)
+    }
+
+    private func makeUser() -> User {
+        return User()
     }
 
 }

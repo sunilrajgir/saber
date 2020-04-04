@@ -39,7 +39,8 @@
 		3232C36D24386A9E00DEB8DC /* ServiceContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C36C24386A9E00DEB8DC /* ServiceContainer.saber.swift */; };
 		3232C37124386AD200DEB8DC /* NetworkManager1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C37024386AD200DEB8DC /* NetworkManager1.swift */; };
 		3232C37324386B0C00DEB8DC /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C37224386B0C00DEB8DC /* StorageManager.swift */; };
-		3232C37524386B4F00DEB8DC /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C37424386B4F00DEB8DC /* TestService.swift */; };
+		3232C37524386B4F00DEB8DC /* TestInitInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C37424386B4F00DEB8DC /* TestInitInjection.swift */; };
+		3232C3792438705700DEB8DC /* TestPropertyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3782438705700DEB8DC /* TestPropertyInjection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,7 +78,8 @@
 		3232C36C24386A9E00DEB8DC /* ServiceContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceContainer.saber.swift; sourceTree = "<group>"; };
 		3232C37024386AD200DEB8DC /* NetworkManager1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager1.swift; sourceTree = "<group>"; };
 		3232C37224386B0C00DEB8DC /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		3232C37424386B4F00DEB8DC /* TestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestService.swift; sourceTree = "<group>"; };
+		3232C37424386B4F00DEB8DC /* TestInitInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInitInjection.swift; sourceTree = "<group>"; };
+		3232C3782438705700DEB8DC /* TestPropertyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPropertyInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,10 +230,11 @@
 		3232C36924386A0400DEB8DC /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3232C3772438703D00DEB8DC /* PropertyInjection */,
+				3232C3762438701600DEB8DC /* initInjection */,
 				3232C36F24386ABC00DEB8DC /* Storage */,
 				3232C36E24386AB300DEB8DC /* Network */,
 				3232C36A24386A3B00DEB8DC /* ServiceContaining.swift */,
-				3232C37424386B4F00DEB8DC /* TestService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -250,6 +253,22 @@
 				3232C37224386B0C00DEB8DC /* StorageManager.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		3232C3762438701600DEB8DC /* initInjection */ = {
+			isa = PBXGroup;
+			children = (
+				3232C37424386B4F00DEB8DC /* TestInitInjection.swift */,
+			);
+			path = initInjection;
+			sourceTree = "<group>";
+		};
+		3232C3772438703D00DEB8DC /* PropertyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				3232C3782438705700DEB8DC /* TestPropertyInjection.swift */,
+			);
+			path = PropertyInjection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,10 +373,11 @@
 				3232C3512437B3A500DEB8DC /* BooContaining.swift in Sources */,
 				3232C3552437B43900DEB8DC /* Boo.swift in Sources */,
 				3232C36D24386A9E00DEB8DC /* ServiceContainer.saber.swift in Sources */,
+				3232C3792438705700DEB8DC /* TestPropertyInjection.swift in Sources */,
 				3231482E23D9F82500B71DCD /* ViewController.swift in Sources */,
 				3232C3662437CEC700DEB8DC /* UserManager.swift in Sources */,
 				3231482A23D9F82500B71DCD /* AppDelegate.swift in Sources */,
-				3232C37524386B4F00DEB8DC /* TestService.swift in Sources */,
+				3232C37524386B4F00DEB8DC /* TestInitInjection.swift in Sources */,
 				3232C3532437B42700DEB8DC /* BooContainer.saber.swift in Sources */,
 				3232C3602437CDA800DEB8DC /* AppsContaining.swift in Sources */,
 				3232C3442437A31600DEB8DC /* TestBrief.swift in Sources */,
