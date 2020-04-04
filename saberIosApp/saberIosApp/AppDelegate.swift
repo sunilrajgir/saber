@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Lazy2()
         ProviderContainer().testProvider.logging.log("Sunil Logger")
         TestSingleton().test()
+        BinderContainer().bConsoleLogger.log("Hell Binder")
         return true
     }
 
