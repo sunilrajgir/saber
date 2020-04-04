@@ -43,6 +43,10 @@
 		3232C3792438705700DEB8DC /* TestPropertyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3782438705700DEB8DC /* TestPropertyInjection.swift */; };
 		3232C37C2438728700DEB8DC /* TestMethodInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C37B2438728700DEB8DC /* TestMethodInjection.swift */; };
 		32EC130924387CB7004DCC26 /* TestInstanceInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC130824387CB7004DCC26 /* TestInstanceInjection.swift */; };
+		32EC130C243881E0004DCC26 /* LazyContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC130B243881E0004DCC26 /* LazyContaining.swift */; };
+		32EC130E24388236004DCC26 /* LazyContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC130D24388236004DCC26 /* LazyContainer.saber.swift */; };
+		32EC13102438824D004DCC26 /* Lazy1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC130F2438824D004DCC26 /* Lazy1.swift */; };
+		32EC131224388287004DCC26 /* Lazy2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC131124388287004DCC26 /* Lazy2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +88,10 @@
 		3232C3782438705700DEB8DC /* TestPropertyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPropertyInjection.swift; sourceTree = "<group>"; };
 		3232C37B2438728700DEB8DC /* TestMethodInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMethodInjection.swift; sourceTree = "<group>"; };
 		32EC130824387CB7004DCC26 /* TestInstanceInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInstanceInjection.swift; sourceTree = "<group>"; };
+		32EC130B243881E0004DCC26 /* LazyContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyContaining.swift; sourceTree = "<group>"; };
+		32EC130D24388236004DCC26 /* LazyContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyContainer.saber.swift; sourceTree = "<group>"; };
+		32EC130F2438824D004DCC26 /* Lazy1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy1.swift; sourceTree = "<group>"; };
+		32EC131124388287004DCC26 /* Lazy2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,7 @@
 		3231483E23D9F8DF00B71DCD /* Saber */ = {
 			isa = PBXGroup;
 			children = (
+				32EC130D24388236004DCC26 /* LazyContainer.saber.swift */,
 				3232C36C24386A9E00DEB8DC /* ServiceContainer.saber.swift */,
 				3232C3612437CDE100DEB8DC /* AppsContainer.saber.swift */,
 				3232C35B2437CD4E00DEB8DC /* UserContainer.saber.swift */,
@@ -234,6 +243,7 @@
 		3232C36924386A0400DEB8DC /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				32EC130A243881BB004DCC26 /* LazyInjection */,
 				32EC130724387C97004DCC26 /* InstanceInjection */,
 				3232C37A2438726A00DEB8DC /* MethodInjection */,
 				3232C3772438703D00DEB8DC /* PropertyInjection */,
@@ -291,6 +301,16 @@
 				32EC130824387CB7004DCC26 /* TestInstanceInjection.swift */,
 			);
 			path = InstanceInjection;
+			sourceTree = "<group>";
+		};
+		32EC130A243881BB004DCC26 /* LazyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				32EC130B243881E0004DCC26 /* LazyContaining.swift */,
+				32EC130F2438824D004DCC26 /* Lazy1.swift */,
+				32EC131124388287004DCC26 /* Lazy2.swift */,
+			);
+			path = LazyInjection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,11 +419,14 @@
 				3232C3792438705700DEB8DC /* TestPropertyInjection.swift in Sources */,
 				3231482E23D9F82500B71DCD /* ViewController.swift in Sources */,
 				3232C3662437CEC700DEB8DC /* UserManager.swift in Sources */,
+				32EC131224388287004DCC26 /* Lazy2.swift in Sources */,
 				3231482A23D9F82500B71DCD /* AppDelegate.swift in Sources */,
 				3232C37524386B4F00DEB8DC /* TestInitInjection.swift in Sources */,
+				32EC130C243881E0004DCC26 /* LazyContaining.swift in Sources */,
 				32EC130924387CB7004DCC26 /* TestInstanceInjection.swift in Sources */,
 				3232C3532437B42700DEB8DC /* BooContainer.saber.swift in Sources */,
 				3232C3602437CDA800DEB8DC /* AppsContaining.swift in Sources */,
+				32EC130E24388236004DCC26 /* LazyContainer.saber.swift in Sources */,
 				3232C3442437A31600DEB8DC /* TestBrief.swift in Sources */,
 				3232C34B2437B2BE00DEB8DC /* FooContaining.swift in Sources */,
 				3232C3642437CE0500DEB8DC /* Database.swift in Sources */,
@@ -418,6 +441,7 @@
 				3232C37324386B0C00DEB8DC /* StorageManager.swift in Sources */,
 				3232C3622437CDE100DEB8DC /* AppsContainer.saber.swift in Sources */,
 				3232C35C2437CD4F00DEB8DC /* UserContainer.saber.swift in Sources */,
+				32EC13102438824D004DCC26 /* Lazy1.swift in Sources */,
 				3232C35E2437CD5E00DEB8DC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
