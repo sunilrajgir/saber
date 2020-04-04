@@ -9,26 +9,26 @@ internal class BinderContainer: BinderContaining {
     internal init() {
     }
 
-    internal var bConsoleLogger: BConsoleLogger {
-        let bConsoleLogger = self.makeBConsoleLogger()
-        return bConsoleLogger
-    }
-
     internal var bNetworkManager: BNetworkManager {
         let bNetworkManager = self.makeBNetworkManager()
         return bNetworkManager
+    }
+
+    internal var bConsoleLogger: BConsoleLogger {
+        let bConsoleLogger = self.makeBConsoleLogger()
+        return bConsoleLogger
     }
 
     internal var bLogging: BLogging {
         return self.bConsoleLogger
     }
 
-    private func makeBConsoleLogger() -> BConsoleLogger {
-        return BConsoleLogger()
-    }
-
     private func makeBNetworkManager() -> BNetworkManager {
         return BNetworkManager(bConsoleLogger: self.bConsoleLogger)
+    }
+
+    private func makeBConsoleLogger() -> BConsoleLogger {
+        return BConsoleLogger()
     }
 
 }

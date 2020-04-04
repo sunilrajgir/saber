@@ -11,11 +11,6 @@ internal class SingletonContainer: SingletonContaining {
     internal init() {
     }
 
-    internal var pManager: PManager {
-        let pManager = self.makePManager()
-        return pManager
-    }
-
     internal var nManager: NManager {
         if let cached = self.cached_nManager { return cached }
         let nManager = self.makeNManager()
@@ -23,17 +18,22 @@ internal class SingletonContainer: SingletonContaining {
         return nManager
     }
 
+    internal var pManager: PManager {
+        let pManager = self.makePManager()
+        return pManager
+    }
+
     internal var uManger: UManger {
         let uManger = self.makeUManger()
         return uManger
     }
 
-    private func makePManager() -> PManager {
-        return PManager(nManager: self.nManager)
-    }
-
     private func makeNManager() -> NManager {
         return NManager()
+    }
+
+    private func makePManager() -> PManager {
+        return PManager(nManager: self.nManager)
     }
 
     private func makeUManger() -> UManger {

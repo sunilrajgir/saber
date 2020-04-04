@@ -14,11 +14,6 @@ internal class ServiceContainer: ServiceContaining {
         return networkManager1
     }
 
-    internal var storageManager: StorageManager {
-        let storageManager = self.makeStorageManager()
-        return storageManager
-    }
-
     internal var testPropertyInjection: TestPropertyInjection {
         let testPropertyInjection = self.makeTestPropertyInjection()
         self.injectTo(testPropertyInjection: testPropertyInjection)
@@ -30,12 +25,13 @@ internal class ServiceContainer: ServiceContaining {
         return testInitInjection
     }
 
-    private func makeNetworkManager1() -> NetworkManager1 {
-        return NetworkManager1()
+    internal var storageManager: StorageManager {
+        let storageManager = self.makeStorageManager()
+        return storageManager
     }
 
-    private func makeStorageManager() -> StorageManager {
-        return StorageManager()
+    private func makeNetworkManager1() -> NetworkManager1 {
+        return NetworkManager1()
     }
 
     private func makeTestPropertyInjection() -> TestPropertyInjection {
@@ -46,9 +42,13 @@ internal class ServiceContainer: ServiceContaining {
         return TestInitInjection(networkManager: self.networkManager1, storageManager: self.storageManager)
     }
 
-    internal func injectTo(testInstanceInjection: TestInstanceInjection) {
-        testInstanceInjection.setNetWork(network: self.networkManager1)
-        testInstanceInjection.postSetNetwork()
+    private func makeStorageManager() -> StorageManager {
+        return StorageManager()
+    }
+
+    private func injectTo(testPropertyInjection: TestPropertyInjection) {
+        testPropertyInjection.networkManager = self.networkManager1
+        testPropertyInjection.storageManager = self.storageManager
     }
 
     internal func injectTo(testMethodInjection: TestMethodInjection) {
@@ -56,9 +56,9 @@ internal class ServiceContainer: ServiceContaining {
         testMethodInjection.postInit()
     }
 
-    private func injectTo(testPropertyInjection: TestPropertyInjection) {
-        testPropertyInjection.networkManager = self.networkManager1
-        testPropertyInjection.storageManager = self.storageManager
+    internal func injectTo(testInstanceInjection: TestInstanceInjection) {
+        testInstanceInjection.setNetWork(network: self.networkManager1)
+        testInstanceInjection.postSetNetwork()
     }
 
 }

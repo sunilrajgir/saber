@@ -9,23 +9,23 @@ internal class LazyContainer: LazyContaining {
     internal init() {
     }
 
+    internal var lazy1: Lazy1 {
+        let lazy1 = self.makeLazy1()
+        return lazy1
+    }
+
     internal var lazy2: Lazy2 {
         let lazy2 = self.makeLazy2()
         self.injectTo(lazy2: lazy2)
         return lazy2
     }
 
-    internal var lazy1: Lazy1 {
-        let lazy1 = self.makeLazy1()
-        return lazy1
+    private func makeLazy1() -> Lazy1 {
+        return Lazy1()
     }
 
     private func makeLazy2() -> Lazy2 {
         return Lazy2(lazy1: { [unowned self] in return self.lazy1 })
-    }
-
-    private func makeLazy1() -> Lazy1 {
-        return Lazy1()
     }
 
     private func injectTo(lazy2: Lazy2) {
