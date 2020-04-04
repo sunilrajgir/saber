@@ -47,6 +47,13 @@
 		32EC130E24388236004DCC26 /* LazyContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC130D24388236004DCC26 /* LazyContainer.saber.swift */; };
 		32EC13102438824D004DCC26 /* Lazy1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC130F2438824D004DCC26 /* Lazy1.swift */; };
 		32EC131224388287004DCC26 /* Lazy2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC131124388287004DCC26 /* Lazy2.swift */; };
+		32EC131524388967004DCC26 /* ProviderContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC131424388967004DCC26 /* ProviderContaining.swift */; };
+		32EC1317243889A0004DCC26 /* ProviderContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC1316243889A0004DCC26 /* ProviderContainer.saber.swift */; };
+		32EC1319243889E8004DCC26 /* LoggingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC1318243889E8004DCC26 /* LoggingProtocol.swift */; };
+		32EC131B24388A11004DCC26 /* ConsoleLogger1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC131A24388A11004DCC26 /* ConsoleLogger1.swift */; };
+		32EC131D24388A9C004DCC26 /* FileLogger1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC131C24388A9C004DCC26 /* FileLogger1.swift */; };
+		32EC131F24388AD5004DCC26 /* LoggerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC131E24388AD5004DCC26 /* LoggerProvider.swift */; };
+		32EC132124388C9E004DCC26 /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC132024388C9E004DCC26 /* TestProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +99,13 @@
 		32EC130D24388236004DCC26 /* LazyContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyContainer.saber.swift; sourceTree = "<group>"; };
 		32EC130F2438824D004DCC26 /* Lazy1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy1.swift; sourceTree = "<group>"; };
 		32EC131124388287004DCC26 /* Lazy2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy2.swift; sourceTree = "<group>"; };
+		32EC131424388967004DCC26 /* ProviderContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderContaining.swift; sourceTree = "<group>"; };
+		32EC1316243889A0004DCC26 /* ProviderContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderContainer.saber.swift; sourceTree = "<group>"; };
+		32EC1318243889E8004DCC26 /* LoggingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingProtocol.swift; sourceTree = "<group>"; };
+		32EC131A24388A11004DCC26 /* ConsoleLogger1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLogger1.swift; sourceTree = "<group>"; };
+		32EC131C24388A9C004DCC26 /* FileLogger1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLogger1.swift; sourceTree = "<group>"; };
+		32EC131E24388AD5004DCC26 /* LoggerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerProvider.swift; sourceTree = "<group>"; };
+		32EC132024388C9E004DCC26 /* TestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +138,8 @@
 		3231482823D9F82500B71DCD /* saberIosApp */ = {
 			isa = PBXGroup;
 			children = (
-				3232C36924386A0400DEB8DC /* Service */,
+				32EC131324388783004DCC26 /* Provider */,
+				3232C36924386A0400DEB8DC /* Injections */,
 				3232C3562437B60000DEB8DC /* ContainerInheritance */,
 				3232C3472437B23A00DEB8DC /* Container */,
 				3232C3422437A30500DEB8DC /* Test */,
@@ -146,6 +161,7 @@
 		3231483E23D9F8DF00B71DCD /* Saber */ = {
 			isa = PBXGroup;
 			children = (
+				32EC1316243889A0004DCC26 /* ProviderContainer.saber.swift */,
 				32EC130D24388236004DCC26 /* LazyContainer.saber.swift */,
 				3232C36C24386A9E00DEB8DC /* ServiceContainer.saber.swift */,
 				3232C3612437CDE100DEB8DC /* AppsContainer.saber.swift */,
@@ -240,7 +256,7 @@
 			path = apps;
 			sourceTree = "<group>";
 		};
-		3232C36924386A0400DEB8DC /* Service */ = {
+		3232C36924386A0400DEB8DC /* Injections */ = {
 			isa = PBXGroup;
 			children = (
 				32EC130A243881BB004DCC26 /* LazyInjection */,
@@ -252,7 +268,7 @@
 				3232C36E24386AB300DEB8DC /* Network */,
 				3232C36A24386A3B00DEB8DC /* ServiceContaining.swift */,
 			);
-			path = Service;
+			path = Injections;
 			sourceTree = "<group>";
 		};
 		3232C36E24386AB300DEB8DC /* Network */ = {
@@ -311,6 +327,19 @@
 				32EC131124388287004DCC26 /* Lazy2.swift */,
 			);
 			path = LazyInjection;
+			sourceTree = "<group>";
+		};
+		32EC131324388783004DCC26 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				32EC131424388967004DCC26 /* ProviderContaining.swift */,
+				32EC1318243889E8004DCC26 /* LoggingProtocol.swift */,
+				32EC131A24388A11004DCC26 /* ConsoleLogger1.swift */,
+				32EC131C24388A9C004DCC26 /* FileLogger1.swift */,
+				32EC131E24388AD5004DCC26 /* LoggerProvider.swift */,
+				32EC132024388C9E004DCC26 /* TestProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,18 +454,25 @@
 				32EC130C243881E0004DCC26 /* LazyContaining.swift in Sources */,
 				32EC130924387CB7004DCC26 /* TestInstanceInjection.swift in Sources */,
 				3232C3532437B42700DEB8DC /* BooContainer.saber.swift in Sources */,
+				32EC131F24388AD5004DCC26 /* LoggerProvider.swift in Sources */,
+				32EC131D24388A9C004DCC26 /* FileLogger1.swift in Sources */,
 				3232C3602437CDA800DEB8DC /* AppsContaining.swift in Sources */,
 				32EC130E24388236004DCC26 /* LazyContainer.saber.swift in Sources */,
+				32EC1319243889E8004DCC26 /* LoggingProtocol.swift in Sources */,
 				3232C3442437A31600DEB8DC /* TestBrief.swift in Sources */,
 				3232C34B2437B2BE00DEB8DC /* FooContaining.swift in Sources */,
 				3232C3642437CE0500DEB8DC /* Database.swift in Sources */,
+				32EC131524388967004DCC26 /* ProviderContaining.swift in Sources */,
 				3232C3682437CFA600DEB8DC /* TestContainerInheritance.swift in Sources */,
+				32EC1317243889A0004DCC26 /* ProviderContainer.saber.swift in Sources */,
 				3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */,
 				3231484F23DA091200B71DCD /* NetworkManager.swift in Sources */,
 				3231484A23DA037900B71DCD /* ConsoleLogger.swift in Sources */,
+				32EC132124388C9E004DCC26 /* TestProvider.swift in Sources */,
 				3231484523D9FA4400B71DCD /* AppContainer.saber.swift in Sources */,
 				3231485223DA09A900B71DCD /* TestViewController.swift in Sources */,
 				3232C36B24386A3B00DEB8DC /* ServiceContaining.swift in Sources */,
+				32EC131B24388A11004DCC26 /* ConsoleLogger1.swift in Sources */,
 				3231482C23D9F82500B71DCD /* SceneDelegate.swift in Sources */,
 				3232C37324386B0C00DEB8DC /* StorageManager.swift in Sources */,
 				3232C3622437CDE100DEB8DC /* AppsContainer.saber.swift in Sources */,

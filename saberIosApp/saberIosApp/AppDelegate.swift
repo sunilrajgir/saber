@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         TestInstanceInjection().testInjection()
         //Lazy2()
+        ProviderContainer().testProvider.logging.log("Sunil Logger")
         return true
     }
 
