@@ -65,6 +65,11 @@
 		32EC13352438BA6C004DCC26 /* BLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC13342438BA6C004DCC26 /* BLogging.swift */; };
 		32EC13372438BA9A004DCC26 /* BConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC13362438BA9A004DCC26 /* BConsoleLogger.swift */; };
 		32EC13392438BB10004DCC26 /* BNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC13382438BB10004DCC26 /* BNetworkManager.swift */; };
+		32EC133C2438C3A8004DCC26 /* ContainerInjectionContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC133B2438C3A8004DCC26 /* ContainerInjectionContaining.swift */; };
+		32EC133E2438C3EF004DCC26 /* containerInjectionContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC133D2438C3EF004DCC26 /* containerInjectionContainer.saber.swift */; };
+		32EC13402438C40D004DCC26 /* CIFoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC133F2438C40D004DCC26 /* CIFoo.swift */; };
+		32EC13422438C497004DCC26 /* ContainerInjectionBaseContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC13412438C497004DCC26 /* ContainerInjectionBaseContaining.swift */; };
+		32EC13442438C58D004DCC26 /* ContainerInjectionBaseContainer.saber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC13432438C58D004DCC26 /* ContainerInjectionBaseContainer.saber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +133,11 @@
 		32EC13342438BA6C004DCC26 /* BLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLogging.swift; sourceTree = "<group>"; };
 		32EC13362438BA9A004DCC26 /* BConsoleLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BConsoleLogger.swift; sourceTree = "<group>"; };
 		32EC13382438BB10004DCC26 /* BNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNetworkManager.swift; sourceTree = "<group>"; };
+		32EC133B2438C3A8004DCC26 /* ContainerInjectionContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerInjectionContaining.swift; sourceTree = "<group>"; };
+		32EC133D2438C3EF004DCC26 /* containerInjectionContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = containerInjectionContainer.saber.swift; sourceTree = "<group>"; };
+		32EC133F2438C40D004DCC26 /* CIFoo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFoo.swift; sourceTree = "<group>"; };
+		32EC13412438C497004DCC26 /* ContainerInjectionBaseContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerInjectionBaseContaining.swift; sourceTree = "<group>"; };
+		32EC13432438C58D004DCC26 /* ContainerInjectionBaseContainer.saber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerInjectionBaseContainer.saber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +170,7 @@
 		3231482823D9F82500B71DCD /* saberIosApp */ = {
 			isa = PBXGroup;
 			children = (
+				32EC133A2438C347004DCC26 /* ContainerInjection */,
 				32EC132F2438B9A0004DCC26 /* Binder */,
 				32EC13222438943E004DCC26 /* Singleton */,
 				32EC131324388783004DCC26 /* Provider */,
@@ -185,6 +196,8 @@
 		3231483E23D9F8DF00B71DCD /* Saber */ = {
 			isa = PBXGroup;
 			children = (
+				32EC13432438C58D004DCC26 /* ContainerInjectionBaseContainer.saber.swift */,
+				32EC133D2438C3EF004DCC26 /* containerInjectionContainer.saber.swift */,
 				32EC13322438BA23004DCC26 /* BinderContainer.saber.swift */,
 				32EC132524389522004DCC26 /* SingletonContainer.saber.swift */,
 				32EC1316243889A0004DCC26 /* ProviderContainer.saber.swift */,
@@ -391,6 +404,16 @@
 			path = Binder;
 			sourceTree = "<group>";
 		};
+		32EC133A2438C347004DCC26 /* ContainerInjection */ = {
+			isa = PBXGroup;
+			children = (
+				32EC133B2438C3A8004DCC26 /* ContainerInjectionContaining.swift */,
+				32EC133F2438C40D004DCC26 /* CIFoo.swift */,
+				32EC13412438C497004DCC26 /* ContainerInjectionBaseContaining.swift */,
+			);
+			path = ContainerInjection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -498,6 +521,7 @@
 				3232C36D24386A9E00DEB8DC /* ServiceContainer.saber.swift in Sources */,
 				3232C3792438705700DEB8DC /* TestPropertyInjection.swift in Sources */,
 				3231482E23D9F82500B71DCD /* ViewController.swift in Sources */,
+				32EC13442438C58D004DCC26 /* ContainerInjectionBaseContainer.saber.swift in Sources */,
 				3232C3662437CEC700DEB8DC /* UserManager.swift in Sources */,
 				32EC13352438BA6C004DCC26 /* BLogging.swift in Sources */,
 				32EC131224388287004DCC26 /* Lazy2.swift in Sources */,
@@ -523,8 +547,11 @@
 				32EC1317243889A0004DCC26 /* ProviderContainer.saber.swift in Sources */,
 				32EC1324243894DF004DCC26 /* SingletonContaining.swift in Sources */,
 				3231484323D9F9B900B71DCD /* AppContaining.swift in Sources */,
+				32EC133E2438C3EF004DCC26 /* containerInjectionContainer.saber.swift in Sources */,
 				3231484F23DA091200B71DCD /* NetworkManager.swift in Sources */,
+				32EC13422438C497004DCC26 /* ContainerInjectionBaseContaining.swift in Sources */,
 				3231484A23DA037900B71DCD /* ConsoleLogger.swift in Sources */,
+				32EC13402438C40D004DCC26 /* CIFoo.swift in Sources */,
 				32EC132124388C9E004DCC26 /* TestProvider.swift in Sources */,
 				3231484523D9FA4400B71DCD /* AppContainer.saber.swift in Sources */,
 				3231485223DA09A900B71DCD /* TestViewController.swift in Sources */,
@@ -539,6 +566,7 @@
 				3232C35C2437CD4F00DEB8DC /* UserContainer.saber.swift in Sources */,
 				32EC13102438824D004DCC26 /* Lazy1.swift in Sources */,
 				3232C35E2437CD5E00DEB8DC /* User.swift in Sources */,
+				32EC133C2438C3A8004DCC26 /* ContainerInjectionContaining.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
