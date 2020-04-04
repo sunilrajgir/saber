@@ -9,22 +9,22 @@ internal class FooContainer: FooContaining {
     internal init() {
     }
 
-    internal var boo: Boo {
-        let boo = self.makeBoo()
-        return boo
-    }
-
     internal var foo: Foo {
         let foo = self.makeFoo()
         return foo
     }
 
-    private func makeBoo() -> Boo {
-        return Boo()
+    internal var boo: Boo {
+        let boo = self.makeBoo()
+        return boo
     }
 
     private func makeFoo() -> Foo {
         return Foo(boo: self.boo)
+    }
+
+    private func makeBoo() -> Boo {
+        return Boo()
     }
 
 }
