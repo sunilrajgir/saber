@@ -42,6 +42,7 @@
 		3232C37524386B4F00DEB8DC /* TestInitInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C37424386B4F00DEB8DC /* TestInitInjection.swift */; };
 		3232C3792438705700DEB8DC /* TestPropertyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C3782438705700DEB8DC /* TestPropertyInjection.swift */; };
 		3232C37C2438728700DEB8DC /* TestMethodInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232C37B2438728700DEB8DC /* TestMethodInjection.swift */; };
+		32EC130924387CB7004DCC26 /* TestInstanceInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC130824387CB7004DCC26 /* TestInstanceInjection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		3232C37424386B4F00DEB8DC /* TestInitInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInitInjection.swift; sourceTree = "<group>"; };
 		3232C3782438705700DEB8DC /* TestPropertyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPropertyInjection.swift; sourceTree = "<group>"; };
 		3232C37B2438728700DEB8DC /* TestMethodInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMethodInjection.swift; sourceTree = "<group>"; };
+		32EC130824387CB7004DCC26 /* TestInstanceInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInstanceInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		3232C36924386A0400DEB8DC /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				32EC130724387C97004DCC26 /* InstanceInjection */,
 				3232C37A2438726A00DEB8DC /* MethodInjection */,
 				3232C3772438703D00DEB8DC /* PropertyInjection */,
 				3232C3762438701600DEB8DC /* initInjection */,
@@ -280,6 +283,14 @@
 				3232C37B2438728700DEB8DC /* TestMethodInjection.swift */,
 			);
 			path = MethodInjection;
+			sourceTree = "<group>";
+		};
+		32EC130724387C97004DCC26 /* InstanceInjection */ = {
+			isa = PBXGroup;
+			children = (
+				32EC130824387CB7004DCC26 /* TestInstanceInjection.swift */,
+			);
+			path = InstanceInjection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +401,7 @@
 				3232C3662437CEC700DEB8DC /* UserManager.swift in Sources */,
 				3231482A23D9F82500B71DCD /* AppDelegate.swift in Sources */,
 				3232C37524386B4F00DEB8DC /* TestInitInjection.swift in Sources */,
+				32EC130924387CB7004DCC26 /* TestInstanceInjection.swift in Sources */,
 				3232C3532437B42700DEB8DC /* BooContainer.saber.swift in Sources */,
 				3232C3602437CDA800DEB8DC /* AppsContaining.swift in Sources */,
 				3232C3442437A31600DEB8DC /* TestBrief.swift in Sources */,
