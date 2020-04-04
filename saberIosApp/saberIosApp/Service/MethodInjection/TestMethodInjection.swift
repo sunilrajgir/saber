@@ -9,7 +9,7 @@
 import Foundation
 
 // @saber.scope(service)
-// @saber.injectOnly
+// @saber.injectOnly 
 class TestMethodInjection {
     
     var networkManager : NetworkManager1!
@@ -30,6 +30,7 @@ class TestMethodInjection {
     
     func test()  {
         let container = ServiceContainer()
+        container.injectTo(testMethodInjection: self)
     }
 
 }
