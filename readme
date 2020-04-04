@@ -10,3 +10,26 @@ This is my personal view on saber tool.
 
 How to add saber in xcode
 https://medium.com/@andrew.pleshkov/saber-code-generated-di-ioc-for-swift-f38bbcb5de16
+
+//////////////////////////////////////////////////////////////////////////////////////
+Important saber shell script
+
+Shell script- 
+ saber sources --from ./AdsSdkiOS/Classes/ --out ./AdsSdkiOS/Classes/Saber/
+
+
+// @saber.scope - To define scope
+// @saber.container - To set up container
+// @saber.inject - To DI
+// @saber.injectOnly - To manual call DI
+// @saber.cached - create single class
+// @saber.threadSafe - thread safe for single class
+// @saber.bindTo - send protocol in container
+// @saber.provider - provide class property to container, advanced version of bindTo  
+// @saber.didInject - After injection 
+// @saber.dependsOn - container inheritance
+// @saber.externals - container init with external value 
+
+1. saber sources --workDir ${PROJECT_DIR}/saberIosApp --from . --out Saber (https://github.com/sunilrajgir/saber)
+2. View -  saber sources --workDir ${PROJECT_DIR} --from ../view/view/ --out ../view/view/Saber/
+3. Gateway - saber sources --workDir ${PROJECT_DIR} --from ../gateway/gateway/ --out ../gateway/gateway/Saber/
